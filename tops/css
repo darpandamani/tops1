@@ -1,0 +1,357 @@
+@import url(https://fonts.googleapis.com/css2?family=Mukta&display=swap);
+
+/* compulsory */
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue           : #226db9;
+    --navy           : #000080;
+    --yellow         : #f6f65d;
+    --darkYellow     : #ad8908;
+    --gray           : #808080;
+    --black          : black;
+    --lightblack     : #343434;
+    --Extralightblack: #757575;
+    --white          : white;
+    --lightgray      : #cccbcb;
+
+    --p-1: 10px;
+    --p-2: 20px;
+    --p-3: 30px;
+    --p-4: 40px;
+    --p-5: 50px;
+    --p-6: 60px;
+    --p-7: 70px;
+    --p-8: 80px;
+
+    --border-1: 1px;
+    --border-2: 2px;
+    --border-3: 3px;
+
+    --m-1: 10px;
+    --m-2: 20px;
+    --m-3: 30px;
+    --m-4: 40px;
+    --m-5: 50px;
+
+    --font-1: calc(2.5vw + 24px)
+}
+
+/* common css */
+body {
+    font-family: "Mukta", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* for set page layout */
+.container {
+    max-width    : 1200px;
+    margin       : auto;
+    padding-left : var(--p-1);
+    padding-right: var(--p-1);
+}
+
+.container-full {
+    width        : 100%;
+    padding-left : var(--p-2);
+    padding-right: var(--p-2);
+}
+
+.btn {
+    padding      : var(--p-1) var(--p-3);
+    border-radius: 40px;
+    border       : var(--border-2) solid transparent;
+    cursor       : pointer;
+    font-size    : 16px;
+    transition   : 0.5s ease all;
+}
+
+.space {
+    padding: var(--p-6) 0;
+}
+
+img {
+    max-width     : 100%;
+    height        : auto;
+    vertical-align: middle;
+}
+
+/* =============================================================== */
+header .navbar {
+    display        : flex;
+    align-items    : stretch;
+    justify-content: space-between;
+    gap            : 20px;
+    padding        : var(--p-1) 0;
+}
+
+header .navbar .logo h1 a {
+    color: var(--lightblack);
+}
+
+header .navbar .logo h1 a span {
+    color: var(--Extralightblack)
+}
+
+header .navbar .nav {
+    flex           : 1;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+header .navbar .nav ul {
+    display    : flex;
+    align-items: center;
+    gap        : 30px;
+}
+
+header .navbar .nav ul a {
+    color: var(--lightblack);
+}
+
+header .navbar .nav .accounts {
+    display    : flex;
+    align-items: center;
+    gap        : 10px;
+}
+
+header .navbar .nav .accounts .btn1 {
+    background-color: transparent;
+}
+
+header .navbar .nav .accounts .btn1:hover {
+    color: var(--darkYellow);
+}
+
+header .navbar .nav .accounts .btn2 {
+    color: var(--gray);
+}
+
+header .navbar .nav .accounts .btn2:hover {
+    background-color: var(--gray);
+    color           : var(--white);
+}
+
+header .navbar .menubtn button {
+    background-color: transparent;
+    font-size       : 30px;
+}
+
+/* =================================================================================== */
+.homepage {
+    padding: var(--p-5) 0;
+}
+
+.homepage .home-info {
+    display    : flex;
+    align-items: center;
+    gap        : 20px;
+}
+
+.homepage .home-info .poster {
+    flex           : 1;
+    display        : flex;
+    justify-content: center;
+}
+
+.homepage .home-info .poster video {
+    width: 400px;
+}
+
+.homepage .home-info .poster h1 {
+    font-size     : var(--font-1);
+    width         : 400px;
+    text-align    : center;
+    line-height   : 1;
+    padding-bottom: var(--p-2);
+}
+
+.homepage .home-info .poster .subtext {
+    font-size : 24px;
+    text-align: center;
+}
+
+.homepage .home-info .poster .subtext span {
+    background: url(https://static.remove.bg/deco-brush.svg);
+    padding   : 0 13px;
+}
+
+.homepage .home-info .upload {
+    flex           : 1;
+    display        : flex;
+    justify-content: center;
+}
+
+
+.homepage .home-info .upload .uploadFiles .uploadForms {
+    width        : 450px;
+    box-shadow   : 0 0 15px var(--gray);
+    border-radius: 10px;
+    padding      : var(--p-7);
+    text-align   : center;
+}
+
+.homepage .home-info .upload .uploadFiles .uploadForms button {
+    background-color: var(--blue);
+    padding         : 15px var(--p-3);
+    color           : var(--white);
+    border          : 2px solid transparent;
+}
+
+.homepage .home-info .upload .uploadFiles .uploadForms .uppertext {
+    font-size  : 24px;
+    padding-top: var(--p-2);
+}
+
+.homepage .home-info .upload .uploadFiles .uploadForms .lowertext {
+    font-size: 14px;
+}
+
+.homepage .home-info .upload .uploadFiles .uploadForms .lowertext a {
+    text-decoration: underline 1px solid var(--lightblack) !important;
+    color          : var(--blue);
+}
+
+.homepage .home-info .upload .checkimg {
+    display        : flex;
+    gap            : 10px;
+    margin         : var(--m-3) 0;
+    flex-wrap      : wrap;
+    justify-content: center;
+    align-items    : center;
+}
+
+.homepage .home-info .upload .checkimg img {
+    height       : 80px;
+    width        : 80px;
+    border-radius: 10px;
+    object-fit   : cover;
+}
+
+.homepage .home-info .upload .checkimg .images {
+    display: flex;
+    gap    : 10px;
+}
+
+.homepage .home-info .upload .checkimg .text {
+    font-size: 18px;
+    flex     : 0.6;
+}
+
+/* ================================================================================== */
+.Picture h1 {
+    text-align: center;
+    font-size : var(--font-1);
+}
+
+.Picture .menus {
+    display        : flex;
+    justify-content: center;
+    flex-wrap      : wrap;
+    gap            : 30px;
+    padding        : var(--p-1) 0;
+}
+
+.Picture .menus a {
+    color         : var(--lightblack);
+    font-size     : 18px;
+    letter-spacing: 0.8px;
+    padding       : var(--p-1);
+    border-radius : 40px;
+}
+
+.Picture .menus a.active {
+    background-color: var(--lightgray);
+}
+
+.Picture .images-collection {
+    display              : grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top          : var(--p-4);
+    gap                  : 20px;
+}
+
+.Picture .images-collection img {
+    border-radius: 10px;
+}
+
+.Picture .images-collection .img-text {
+    text-align: center;
+    color     : var(--gray);
+}
+
+/* =================================================================  */
+.signupBody {
+    /* background: linear-gradient(to left, var(--blue), var(--navy)); */
+    background     : url(https://cdn.pixabay.com/photo/2016/10/21/14/50/plouzane-1758197_1280.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.SignupPage {
+    padding         : var(--p-4);
+    width           : fit-content;
+    margin          : 55px auto;
+    background-color: rgba(255, 255, 255, 0.417);
+    backdrop-filter : blur(10px);
+}
+
+.SignupPage h1 {
+    text-align: center;
+}
+
+.field {
+    display: flex;
+    padding: var(--p-1);
+}
+
+input[type="text"],
+[type="password"],
+[type="email"] {
+    height     : 35px;
+    width      : 250px;
+    border     : var(--border-1) solid var(--gray);
+    border-left: none;
+    padding    : 0 var(--p-1);
+}
+
+input[type="text"]:focus-visible,
+[type="password"]:focus-visible,
+[type="email"]:focus-visible {
+    outline: none;
+}
+
+.icon {
+    height          : 35px;
+    width           : 30px;
+    border          : var(--border-1) solid var(--gray);
+    border-right    : none;
+    display         : grid;
+    place-content   : center;
+    background-color: var(--white);
+}
+
+.SignupPage .bottmval {
+    text-align: center;
+    padding   : var(--p-1) 0;
+}
+
+.SignupPage .bottmval button {
+    background-color: var(--blue);
+    color           : var(--white);
+}
+
+.SignupPage .bottmval a {
+    color: var(--blue);
+}

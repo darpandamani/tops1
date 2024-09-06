@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container-full">
+            <div class="navbar">
+                <div class="logo">
+                    <h1><i class="fa-brands fa-uikit"></i>
+                        <a href="">remove <span>bg</span></a>
+                    </h1>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="">Remove Background</a></li>
+                        <li><a href="">How to Use</a>
+                            <span class="fa-solid fa-angle-down"></span>
+                        </li>
+                        <li><a href="">Tools & API</a></li>
+                        <li><a href="">Pricing</a></li>
+                    </ul>
+                    <div class="accounts">
+                        <div>
+                            <button class="btn btn1">Log In</button>
+                        </div>
+                        <div>
+                            <a href="signup.html" class="btn btn2">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menubtn">
+                    <button class="btn">
+                        <i class="fa-solid fa-grip-lines"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="homepage">
+        <div class="container">
+            <div class="home-info">
+                <div class="poster">
+                    <div>
+                        <video src="video/emilia_compressed.mp4" autoplay muted></video>
+                        <h1>Remove Image Background</h1>
+                        <div class="subtext">
+                            <div>100% Automatically and <span>Free</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="upload">
+                    <div class="uploadingOp">
+                        <div class="uploadFiles">
+                            <div class="uploadForms">
+                                <button class="btn">Upload Images</button>
+                                <div class="uppertext">
+                                    or drop a file,
+                                </div>
+                                <div class="lowertext">
+                                    paste image or <a href="">URL</a>.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkimg">
+                            <div class="text">
+                                No image?
+                                Try one of these:
+                            </div>
+                            <div class="images">
+                                <div>
+                                    <img src="https://static.remove.bg/uploader-examples/person/2_thumbnail.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="https://static.remove.bg/uploader-examples/animal/1_thumbnail.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="https://static.remove.bg/uploader-examples/car/6_thumbnail.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="https://static.remove.bg/uploader-examples/product/9_thumbnail.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Picture">
+        <div class="container space">
+            <h1>Just Picture it!</h1>
+            <div class="menus">
+                <div><a href="" class="active">People</a></div>
+                <div><a href="">Products</a></div>
+                <div><a href="">Animal</a></div>
+                <div><a href="">Cars</a></div>
+                <div><a href="">Graphics</a></div>
+            </div>
+            <div class="images-collection">
+                <div class="image">
+                    <img src="https://sb.kaleidousercontent.com/67418/604x802/ed396e87c5/people-1.jpg" alt="">
+                    <div class="img-text">Original</div>
+                </div>
+                <div class="image">
+                    <img src="https://sb.kaleidousercontent.com/67418/604x802/51d867647f/people-1-transparent2.jpg"
+                        alt="">
+                    <div class="img-text">Transparent background</div>
+                </div>
+                <div class="image">
+                    <img src="https://sb.kaleidousercontent.com/67418/604x802/b8d74bcca6/people-skater-floor-fix.png"
+                        alt="">
+                    <div class="img-text">New Background</div>
+                </div>
+                <div class="image">
+                    <img src="https://sb.kaleidousercontent.com/67418/604x802/e74824a7ae/people-endless-possibilities.jpg"
+                        alt="">
+                    <div class="img-text">Endless possibilities</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

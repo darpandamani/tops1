@@ -1,0 +1,112 @@
+@media (max-width:576px) {
+    .container {
+        width: 100%;
+    }
+
+    header .navbar .nav {
+        display: none;
+    }
+
+    header .navbar .menubtn {
+        display: block;
+    }
+
+    .homepage .home-info {
+        flex-direction: column;
+    }
+
+    .homepage .home-info .upload .uploadFiles .uploadForms {
+        width: unset;
+    }
+
+    .homepage .home-info .poster video {
+        width: 100%;
+    }
+
+    .homepage .home-info .poster h1 {
+        width     : 100%;
+        text-align: center;
+    }
+
+    .Picture .images-collection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ================================================================== */
+@media (min-width:576px) {
+    .container {
+        max-width: 550px;
+    }
+
+    header .navbar .nav {
+        display: none;
+    }
+
+    header .navbar .menubtn {
+        display: block;
+    }
+
+    .homepage .home-info {
+        flex-direction: column;
+    }
+
+    .homepage .home-info .upload .uploadFiles .uploadForms {
+        width: unset;
+    }
+
+    .homepage .home-info .poster video {
+        width: 100%;
+    }
+
+    .homepage .home-info .poster h1 {
+        width     : 100%;
+        text-align: center;
+    }
+}
+
+/* ======================================================================= */
+@media (min-width:768px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+/* ======================================================================= */
+@media (min-width:992px) {
+    .container {
+        max-width: 950px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    header .navbar .nav {
+        display: flex;
+    }
+
+    header .navbar .menubtn {
+        display: none;
+    }
+
+    .homepage .home-info {
+        flex-direction: row;
+    }
+
+    .homepage .home-info .upload .uploadFiles .uploadForms {
+        width : 450px;
+        margin: auto;
+    }
+
+    .homepage .home-info .poster video {
+        width: 400px;
+    }
+
+    .homepage .home-info .poster h1 {
+        width     : 400px;
+        text-align: center;
+    }
+}
