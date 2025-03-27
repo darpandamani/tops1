@@ -1,0 +1,13 @@
+body {
+    background-color: #f8f9fa;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
