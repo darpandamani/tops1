@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styled Links and Paragraph</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Link Styles */
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+        a:visited {
+            color: purple;
+        }
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+        a:active {
+            color: green;
+        }
+
+        /* Paragraph First-Line Styling */
+        p::first-line {
+            font-weight: bold;
+            color: darkblue;
+        }
+
+        /* Heading Decorative Style */
+        h1::before {
+            content: "★ ";
+            color: gold;
+            font-size: 1.5em;
+        }
+
+        /* List Styles */
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enhanced Links and Paragraph</h1>
+    <ol>
+        <li>Create an HTML page with several links and a paragraph.</li>
+        <li>Apply CSS to:
+            <ul>
+                <li>Style links with different colors for hover, active, and visited states.</li>
+                <li>Use the <code>::first-line</code> pseudo-element to style only the first line of the paragraph.</li>
+                <li>Add a decorative <code>::before</code> element to headings.</li>
+            </ul>
+        </li>
+    </ol>
+    <p>
+        This is a demonstration paragraph to show the <code>::first-line</code> pseudo-element in action. 
+        The first line of this paragraph is styled differently, making it stand out from the rest of the text content.
+    </p>
+    <p>Here are some links to demonstrate the different states:</p>
+    <ul>
+        <li><a href="https://example.com">Visit Example 1</a></li>
+        <li><a href="https://example.com">Visit Example 2</a></li>
+        <li><a href="https://example.com">Visit Example 3</a></li>
+    </ul>
+</body>
+</html>

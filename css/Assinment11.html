@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Links and Paragraph</title>
+    <style>
+
+        a:link {
+            color: blue;
+            text-decoration: none; 
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;         }
+
+        a:active {
+            color: green;
+        }
+
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        p::first-line {
+            font-weight: bold;
+            color: darkblue;
+        }
+
+        h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
+            content: "★ ";
+            color: gold;
+            font-size: 24px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Webpage</h1>
+    <p>This is a sample webpage with links styled differently for each state (link, visited, hover, and active). The first line of this paragraph is styled differently.</p>
+
+    <h2>Useful Links:</h2>
+    <ul>
+        <li><a href="https://www.example.com">Example Website 1</a></li>
+        <li><a href="https://www.example.org">Example Website 2</a></li>
+        <li><a href="https://www.example.net">Example Website 3</a></li>
+        <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
+        <li><a href="https://www.google.com">Google</a></li>
+    </ul>
+</body>
+</html>

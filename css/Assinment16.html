@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .layout {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sidebar {
+            flex: 1 1 25%;
+            background-color: #d65ba3;
+            padding: 20px;
+            box-sizing: border-box;
+            border-right: 1px solid #ddd;
+            height: 100vh; 
+        }
+
+        .main-content {
+            flex: 1 1 75%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                flex: 1 1 100%;
+                order: 1; 
+                border-right: none;
+                border-top: 1px solid #ddd;
+                height: auto; /* Reset height for mobile view */
+            }
+
+            .main-content {
+                flex: 1 1 100%;
+                order: 2; 
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive adjustments for the gallery */
+        @media (max-width: 1024px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Responsive Layout with Sidebar</h1>
+
+    <div class="layout">
+    
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  repellendus autem porro, blanditii</p>
+        </div>
+
+        <div class="main-content">
+            <div class="gallery">
+                <img src="https://picsum.photos/300/200?random=1" alt="Random Image 1">
+                <img src="https://picsum.photos/300/200?random=2" alt="Random Image 2">
+                <img src="https://picsum.photos/300/200?random=3" alt="Random Image 3">
+                <img src="https://picsum.photos/300/200?random=4" alt="Random Image 4">
+                <img src="https://picsum.photos/300/200?random=5" alt="Random Image 5">
+                <img src="https://picsum.photos/300/200?random=6" alt="Random Image 6">
+                <img src="https://picsum.photos/300/200?random=7" alt="Random Image 7">
+                <img src="https://picsum.photos/300/200?random=8" alt="Random Image 8">
+                <img src="https://picsum.photos/300/200?random=9" alt="Random Image 9">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
