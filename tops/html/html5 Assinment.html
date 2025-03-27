@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Multimedia and Shapes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    video,
+    audio {
+      margin: 20px auto;
+      display: block;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+    }
+
+    canvas {
+      display: block;
+      margin: 20px auto;
+      border: 2px solid #333;
+      border-radius: 10px;
+      background-color: #000;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .contener {
+      margin: auto;
+      width: 60%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: linear-gradient(145deg, #e6e6e6, #ffffff);
+      border-radius: 15px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+    }
+
+    svg {
+      display: inline-block;
+      margin: 10px;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    svg rect {
+      transition: all 0.3s ease;
+    }
+
+    svg rect:hover {
+      fill: orange;
+      stroke: blue;
+      stroke-width: 1;
+    }
+
+    .static-svg-container {
+      margin-top: 20px;
+      padding: 20px;
+      background: linear-gradient(145deg, #e6e6e6, #ffffff);
+      border-radius: 15px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      color: #4b0082;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>HTML5 Multimedia and Shapes</h1>
+  <video src="https://www.w3schools.com/html/mov_bbb.mp4" height="400" controls loop></video>
+  <audio src="https://www.w3schools.com/html/horse.mp3" controls loop></audio>
+
+  <div class="contener">
+    <svg class="svg1" width="500" height="250">
+      <rect x="50" y="50" width="150" height="100" fill="blue" stroke="black" stroke-width="3" />
+      <polygon points="200,150 250,50 300,150" fill="red" />
+      <ellipse cx="150" cy="200" rx="50" ry="25" fill="green" />
+    </svg>
+
+    <canvas id="myCanvas" width="400" height="400"></canvas>
+    <script>
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+
+      // Background Gradient
+      const gradient = ctx.createRadialGradient(200, 200, 50, 200, 200, 200);
+      gradient.addColorStop(0, "orange");
+      gradient.addColorStop(1, "purple");
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, 400, 400);
+
+      // Triangle
+      ctx.beginPath();
+      ctx.moveTo(200, 50);
+      ctx.lineTo(300, 200);
+      ctx.lineTo(100, 200);
+      ctx.closePath();
+      ctx.fillStyle = "cyan";
+      ctx.fill();
+
+      // Square
+      ctx.fillStyle = "lime";
+      ctx.fillRect(150, 250, 100, 100);
+
+      // Circle
+      ctx.beginPath();
+      ctx.arc(200, 200, 50, 0, Math.PI * 2);
+      ctx.fillStyle = "yellow";
+      ctx.fill();
+      ctx.lineWidth = 5;
+      ctx.strokeStyle = "red";
+      ctx.stroke();
+    </script>
+
+    <svg class="svg1" width="500" height="250">
+      <line x1="50" y1="50" x2="200" y2="200" stroke="blue" stroke-width="5" />
+      <polygon points="150,50 100,200 200,200" fill="pink" stroke="purple" stroke-width="2" />
+      <circle cx="300" cy="150" r="50" fill="orange" stroke="black" stroke-width="3" />
+    </svg>
+  </div>
+
+  <div class="static-svg-container">
+    <svg class="svgs" width="300" height="130">
+      <rect width="200" height="100" x="20" y="20" rx="20" ry="50" fill="lightblue" />
+      <line x1="50" y1="50" x2="250" y2="50" stroke="red" stroke-width="3" />
+      <circle cx="150" cy="75" r="30" fill="yellow" stroke="green" stroke-width="4" />
+    </svg>
+
+    <svg class="svgs" width="300" height="130">
+      <polygon points="50,20 150,100 250,20" fill="purple" />
+      <ellipse cx="150" cy="80" rx="100" ry="40" fill="lightgreen" stroke="blue" stroke-width="3" />
+    </svg>
+  </div>
+</body>
+
+</html>

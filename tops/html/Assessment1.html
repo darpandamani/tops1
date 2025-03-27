@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f0f8ff, #e6e6fa);
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .contact-title {
+            text-align: center;
+            font-size: 2.5em;
+            color: #4a4e69;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h3 {
+            margin-top: 0;
+            color: #4a4e69;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            font-size: 1em;
+            margin: 10px 0;
+            color: #4a4e69;
+        }
+
+        .contact-info .icon {
+            margin-right: 10px;
+            color: #4a4e69;
+        }
+
+        .contact-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .contact-form, .map {
+            flex: 1;
+            min-width: 300px;
+            height: 400px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            height: 100%;
+        }
+
+        .contact-form .form-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            flex: 1;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #4a4e69;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #6a89cc;
+        }
+
+        .map {
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #4a4e69;
+            font-size: 1.5em;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #6a89cc;
+        }
+
+        @media (max-width: 768px) {
+            .contact-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h1 class="contact-title">Get in Touch</h1>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h3>Our Address</h3>
+            <p><i class="fas fa-map-marker-alt icon"></i> 123 Saint Marco Street, 6th Floor, Tokyo, Japan</p>
+            <p><i class="fas fa-phone-alt icon"></i> +81 1234 567 890</p>
+            <p><i class="fas fa-envelope icon"></i> contact@company.com</p>
+            <p><i class="fas fa-globe icon"></i> www.company.com</p>
+        </div>
+
+        <!-- Form and Map -->
+        <div class="contact-content">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" placeholder="Company" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="tel" placeholder="Phone Number" required>
+                    </div>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Map -->
+            <div class="map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345091794!2d144.95373531531554!3d-37.81627927975144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5775d9ec39f4e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sin!4v1697740205395!5m2!1sen!2sin" 
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Social Links -->
+        <footer class="social-links">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github-square"></i></a>
+        </footer>
+    </div>
+</body>
+</html>
