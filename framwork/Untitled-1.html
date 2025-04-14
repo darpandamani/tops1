@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adavance Assignment 1,2 (customize color and spacing,button and card)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#662249',
+                        light: '#a34054',
+                        extralight: '#e9bcb9',
+                    },
+                    spacing: {
+                        '5': '5rem',
+                        '10': '10rem',
+                        '12': '12rem',
+                        '15': '15rem',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="bg-dark text-extralight p-5 w-1/2 m-auto text-xl">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum a reprehenderit error consequuntur
+            temporibus harum culpa ad deserunt, labore incidunt, placeat expedita aspernatur ex explicabo iste quis
+            aliquid, quasi quod!</p>
+    </div>
+
+    <div class="bg-dark my-5 p-5 flex justify-center gap-5 w-full">
+        <button class="bg-extralight text-light p-8 text-2xl rounded-xl hover:bg-white">Click
+            Here</button>
+        <div class="bg-extralight text-light capitalize rounded-xl shadow-2xl p-11 w-1/3">
+            <p class="text-center">
+                <b class="text-xl">card Title</b><br><br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure dolor rem dolore adipisci quaerat minima
+                facilis pariatur nesciunt deserunt magni
+            </p>
+        </div>
+        <div class="bg-extralight text-light capitalize rounded-xl shadow-2xl p-11 w-1/3">
+            <p class="text-center">
+                <b class="text-xl">card Title</b><br><br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure dolor rem dolore adipisci quaerat minima
+                facilis pariatur nesciunt deserunt magni
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>
